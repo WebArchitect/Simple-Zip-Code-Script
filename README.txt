@@ -15,11 +15,9 @@ zohar@jakobovski.com
 ----
 find_close_zipcodes($origin_zipcode, $distance, $unit)($zipcode, $distance, $unit)
 
-$zipcode is the zipcode you want to search for close zipcodes
+$origin_zipcode is the origin zipcode from which you are finding neighboring codes
 $distance is the radius you want to search
 $unit is the unit you want your result returned. $unit can be "K" for kilometers, "M" for miles, 
-
-EXAMPLE: close_zipcodes("60076","10","M")
 
 
 The results are returned in a multi-dimensional array.
@@ -34,5 +32,4 @@ $zipone is the first zipcode
 $ziptwo is the second zipcode
 $unit is the unit you want your result returned. $unit can be "K" for kilometers, "M" for miles, 
 
-EXAMPLE: two_zip("60076", "60045", "M")
 
