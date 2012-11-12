@@ -1,4 +1,6 @@
-For the script to function you need to install the database to your server. 
+Find all the zip codes in a radius of x miles from a another zip code, or find the distance between two zip codes. The script uses the most up-to-date database provided by the U.S government with 42,000+ records. Using it is as simple as calling a PHP function. This program was written with simplicity in mind. It is very easy to use and install. I have even included a working example. This script can be used alone or easily integrated with other projects such as a store locator.
+
+Instalation instructions
 
 1. Open phpMyAdmin and import the file named "zip_codes_database".
 2. Edit zipcode.php and enter your database username and password.
@@ -10,17 +12,8 @@ zohar@jakobovski.com
 
 
 
-
-
-
-
-								---- Functionality ----
-
----------------------------------------------------------------------------------------------------
-Call the function close_zipcodes inorder to find the zipcodes within a radius. 
-
-
-close_zipcodes($zipcode, $distance, $unit)
+----
+find_close_zipcodes($origin_zipcode, $distance, $unit)($zipcode, $distance, $unit)
 
 $zipcode is the zipcode you want to search for close zipcodes
 $distance is the radius you want to search
@@ -34,25 +27,12 @@ The results are returned in a multi-dimensional array.
 [zipcode][distance]
 
 
-If you want to call the function from a different php file make sure to write "require("zipcode.php");"
-Also d
----------------------------------------------------------------------------------------------------------------------
-Call the function twozip to find the distance between two zip codes
-
-two_zip($zipone, $ziptwo, $unit)
+----
+distance_between_zipcodes($zipone, $ziptwo, $unit)
 
 $zipone is the first zipcode
 $ziptwo is the second zipcode
 $unit is the unit you want your result returned. $unit can be "K" for kilometers, "M" for miles, 
 
 EXAMPLE: two_zip("60076", "60045", "M")
-
-results are return as a number
-
-
-
------------------------------------------------------------------------------------------------------------------------
-
-**Function distance55 was written by Hexa Software Development Center and is available freely from zipcodeworld.com. By buying this product you are buying everything BUT function distance55. 
----------------------------------------------------------------------------------------------------------
 

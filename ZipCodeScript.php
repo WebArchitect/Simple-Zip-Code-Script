@@ -11,8 +11,7 @@ mysql_select_db("databasename");
 
 
 
-function close_zipcodes($zipcode, $distance, $unit){
-
+function  find_close_zipcodes($origin_zipcode, $distance, $unit){
 
 
 // SWITCH BETWEEN KILOMETERS AND MILES
@@ -26,7 +25,7 @@ $unit2 = 1.609344;
 }
 
 
-$search= "SELECT * FROM zip_codes WHERE zip='$zipcode'";
+$search= "SELECT * FROM zip_codes WHERE zip='$origin_zipcode'";
 $result = mysql_query($search) or die('Error: ' . mysql_error());
 
 
@@ -62,7 +61,7 @@ return $array;
 }
 
 
-function twozip($zipone, $ziptwo, $unit){
+function distance_between_zipcodes($zipone, $ziptwo, $unit){
 
 $find = mysql_query("SELECT * FROM zip_codes  WHERE zip='$zipone'");
 if (!$find) {
