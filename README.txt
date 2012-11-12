@@ -1,4 +1,4 @@
-Find all the zip codes in a radius of x miles from a another zip code, or find the distance between two zip codes. The script uses the most up-to-date database provided by the U.S government with 42,000+ records. Using it is as simple as calling a PHP function. This program was written with simplicity in mind. It is very easy to use and install. I have even included a working example. This script can be used alone or easily integrated with other projects such as a store locator.
+Find all the zip codes in a radius of x miles from a another zip code, or find the distance between two zip codes. The script uses the most up-to-date database provided by the U.S government with 42,000+ records. Using it is as simple as calling a PHP function. This program was written with simplicity in mind. It is very easy to use and install. This script can be used alone or easily integrated with other projects such as a store locator.
 
 Instalation instructions
 
