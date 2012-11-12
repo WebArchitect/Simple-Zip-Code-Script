@@ -7,11 +7,6 @@ Instalation instructions
 3. Customize zipcode.php to work with your application
 
 
--Jakobovki  --  http://jakobovksi.com
-zohar@jakobovski.com
-
-
-
 ----
 find_close_zipcodes($origin_zipcode, $distance, $unit)($zipcode, $distance, $unit)
 
